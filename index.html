@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hava Durumu App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="clear.mp4" type="video/mp4" />
+    Tarayıcın video desteklemiyor.
+  </video>
+
+  <div class="container">
+    <h1>Hava Durumu</h1>
+    <input type="text" id="cityInput" placeholder="Şehir gir..." />
+    <button onclick="getWeather()">Getir</button>
+    <div id="weatherResult"></div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
